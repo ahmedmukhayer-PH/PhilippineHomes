@@ -1,0 +1,67 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Philippine Homes API",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/auth/login": {
+      "post": {
+        "summary": "Admin/Buyer/Seller login"
+      }
+    },
+    "/buyers": {
+      "post": {
+        "summary": "Create buyer account"
+      }
+    },
+    "/offers": {
+      "post": {
+        "summary": "Create offer"
+      }
+    },
+    "/offers/{id}/accept": {
+      "patch": {
+        "summary": "Seller accepts offer"
+      }
+    },
+    "/offers/{id}/reject": {
+      "patch": {
+        "summary": "Seller rejects offer"
+      }
+    },
+    "/messages/{id}/reveal": {
+      "post": {
+        "summary": "Reveal seller payout details (no OTP)"
+      }
+    },
+    "/reservations/{id}/proof": {
+      "post": {
+        "summary": "Buyer uploads payment proof"
+      }
+    },
+    "/reservations/{id}/confirm": {
+      "patch": {
+        "summary": "Seller confirms payment"
+      }
+    },
+    "/reservations/{id}/refund": {
+      "post": {
+        "summary": "Seller approves refund (reason required)"
+      }
+    },
+    "/ads/placements": {
+      "get": {
+        "summary": "List ad slots & prices"
+      },
+      "post": {
+        "summary": "Create/update placement (admin)"
+      }
+    },
+    "/ads/campaigns": {
+      "post": {
+        "summary": "Create advertiser campaign & checkout"
+      }
+    }
+  }
+}

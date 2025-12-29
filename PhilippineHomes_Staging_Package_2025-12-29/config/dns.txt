@@ -1,0 +1,7 @@
+
+# DNS Records for staging (GoDaddy)
+Type: CNAME | Host/Name: staging | Value: cname.vercel-dns.com | TTL: 1 hour
+Type: CNAME | Host/Name: www     | Value: cname.vercel-dns.com | TTL: 1 hour
+Type: A     | Host/Name: @        | Value: 76.76.21.21         | TTL: 1 hour
+
+Once records propagate, bind the app to https://staging.philippinehomes.net and issue SSL automatically.
