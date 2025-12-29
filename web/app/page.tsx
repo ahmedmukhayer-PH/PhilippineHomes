@@ -1,4 +1,3 @@
-
 export default function Page() {
   return (
     <main style={{ padding: 24, maxWidth: 960, margin: '0 auto' }}>
